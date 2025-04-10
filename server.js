@@ -11,7 +11,7 @@ app.post('/proxy', async (req, res) => {
         const response = await fetch('https://api.deepseek.com/v1/chat/completions', {
             method: 'POST',
             headers: {
-                'Authorization': 'Bearer sk-bb14e4d30952476c8e04ebf72d2fe8a3',  // <<< vlož svůj klíč sem
+                'Authorization': 'Bearer sk-bb14e4d30952476c8e04ebf72d2fe8a3',
                 'Content-Type': 'application/json'
             },
             body: JSON.stringify(req.body)
